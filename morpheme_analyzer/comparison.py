@@ -11,12 +11,12 @@ examples = [
     u'아이폰 기다리다 지쳐 애플공홈에서 언락폰질러버렸다 6+ 128기가실버ㅋ'
 ]
 
-for analyzer in analyzers:
+for example in examples:
     print("--------------------------------------")
-    print(analyzer.__class__.__name__)
-    for example in examples:
+    print(example)
+    for analyzer in analyzers:
         print("-------------------")
-        print(example)
+        print(analyzer.__class__.__name__)
         print(analyzer.pos(example))
         print("-------------------")
     print("--------------------------------------")
